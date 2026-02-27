@@ -1,0 +1,63 @@
+.content-row:is(:nth-child(1)) {
+    height: 40em;
+}
+.content-row:is(:nth-child(2)) {
+    height: 30em;
+}
+.content-row:is(:nth-child(4)) {
+    height: 35em;
+}
+.content-row:is(:nth-child(5)) {
+    gap: 5em;
+    /* justify-content: flex-start;
+    align-items: flex-start; */
+}
+.content-row:is(:nth-child(6)) {
+    height: 40em;
+    /* justify-content: flex-end;
+    align-items: flex-end; */
+}
+
+/* img:is(:nth-child(1)) {
+    border: 3px solid red;
+} */
+
+.content.one {
+    height: 30em;
+    width: 30em;
+    background-image: url(MEDIA/portfolio/MHII_2.png); background-position: center; background-size: cover; background-repeat: no-repeat;
+} .content.one:hover {
+    background-image: url(MEDIA/portfolio/MHII_1.png);
+}
+
+.content.two {
+    height: 35em;
+    width: 21em;
+    background-image: url(MEDIA/portfolio/grate-poster-1.png); background-position: center; background-size: 100%; background-repeat: no-repeat;
+} .content.two:hover {
+    width: 26em;
+    background-image: url(MEDIA/portfolio/grate-poster-2.png);
+}
+
+.content.three {
+    height: 35em;
+    width: 18em;
+    background-image: url(MEDIA/portfolio/urwhatueat-cover.png); background-position: center; background-size: 100%; background-repeat: no-repeat;
+} .content.three:hover {
+    /* width: 26em; */
+    background-image: url(MEDIA/portfolio/back-door.png);
+}
+
+.content.four {
+    height: 35em;
+    width: 60em;
+    background-image: url(MEDIA/portfolio/Kara_title_cards_1.png); background-position: center; background-size: cover; background-repeat: no-repeat;
+} .content.four:hover {
+    background-image: url(MEDIA/portfolio/Faulkner\,Kara_Project\ 7.gif);
+}
+
+.contact-info:is(:nth-child(1))::before {
+    content: 'PHONE NUMBER'
+} .contact-info:is(:nth-child(1)):hover::before {
+    content: '865-441-3124'
+}

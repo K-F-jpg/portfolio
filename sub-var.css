@@ -1,0 +1,67 @@
+body {
+    background-color: magenta;
+}
+ .text-container {
+    display: flex;
+    flex-direction: column;
+    /* border: 3px solid green; */
+    /* position: fixed;
+    top: 0em;
+    left: 0em; */
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    margin-top: .75em; margin-left: .75em; margin-right: 5em;
+    gap: 1em;
+ }
+.text-over {
+    display: flex;
+    flex-direction: row;
+    /* background-color: white; */
+    line-height: .69em;
+    width: auto;
+    height: auto;
+}
+.text-over:is(:nth-child(1)) {
+    font-size: 3em;
+}
+.text-over:is(:nth-child(2)) {
+    font-size: 1em;
+}
+.text-over:is(:nth-child(3)) {
+    font-size: 1em;
+}
+.text-over:is(:nth-child(4)) {
+    font-size: 2em;
+    line-height: 1em;
+}
+.multiply {
+    mix-blend-mode: multiply;
+}
+mark {
+    mix-blend-mode: multiply;
+    box-sizing: border-box;
+    background-color: white;
+    padding: .1em;
+    width: auto;
+    height: auto;
+} mark:hover {
+    outline: 3px solid red;
+}
+/* .mark {
+    box-sizing: border-box;
+    padding: .1em;
+    width: auto;
+    height: auto;
+} .mark:hover {
+    outline: 3px solid red;
+} */
+
+button {
+    display: flex;
+    flex-direction: row;
+    width: 7.5em;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
