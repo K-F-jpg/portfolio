@@ -21,6 +21,14 @@
 /* img:is(:nth-child(1)) {
     border: 3px solid red;
 } */
+.content.zero {
+    height: 38em;
+    width: 50em;
+    background-image: url(MEDIA/portfolio/ms-zine1.png); background-position: center; background-size: cover; background-repeat: no-repeat;
+    /* border: 3px solid yellow; */
+} .content.zero:hover {
+    background-image: url(MEDIA/portfolio/ms-zine2.png);
+}
 
 .content.one {
     height: 30em;
