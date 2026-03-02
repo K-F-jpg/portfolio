@@ -34,6 +34,7 @@
     height: 35em;
     width: 21em;
     background-image: url(MEDIA/portfolio/grate-poster-1.png); background-position: center; background-size: 100%; background-repeat: no-repeat;
+    border: 3px solid yellow;
 } .content.two:hover {
     width: 26em;
     background-image: url(MEDIA/portfolio/grate-poster-2.png);
@@ -48,11 +49,25 @@
     background-image: url(MEDIA/portfolio/back-door.png);
 }
 
+@keyframes content-change {
+    33% {background-image: url(MEDIA/portfolio/texture.png);}
+    66% {background-image: url(MEDIA/portfolio/image.png);}
+    99% {background-image: url(MEDIA/portfolio/rhythm.png);}
+}
 .content.four {
+    height: 35em;
+    width: 23em;
+    background-image: url(MEDIA/portfolio/rhythm.png); background-position: center; background-size: cover; background-repeat: no-repeat;
+    border: 3px solid yellow;
+} .content.four:hover {
+    animation: content-change 1.5s infinite;
+}
+.content.five {
     height: 35em;
     width: 60em;
     background-image: url(MEDIA/portfolio/Kara_title_cards_1.png); background-position: center; background-size: cover; background-repeat: no-repeat;
-} .content.four:hover {
+    border: 3px solid yellow;
+} .content.five:hover {
     background-image: url(MEDIA/portfolio/Faulkner\,Kara_Project\ 7.gif);
 }
 
@@ -60,4 +75,14 @@
     content: 'PHONE NUMBER'
 } .contact-info:is(:nth-child(1)):hover::before {
     content: '865-441-3124'
+}
+.contact-info:is(:nth-child(2))::before {
+    content: 'EMAIL ADDRESS'
+} .contact-info:is(:nth-child(2)):hover::before {
+    content: 'faulknerk2@vcu.edu'
+}
+.contact-info:is(:nth-child(3))::before {
+    content: 'LINKEDIN'
+} .contact-info:is(:nth-child(3)):hover::before {
+    content: 'Kara Faulkner Faulkner'
 }

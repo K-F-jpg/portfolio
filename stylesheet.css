@@ -143,3 +143,7 @@ a {
 .image[data-status="active"] {
     display: block;
 }
+p {
+    color: white;
+    font-size: .1em;
+}
