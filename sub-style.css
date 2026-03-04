@@ -9,6 +9,7 @@ body {
     align-items: flex-start; */
     justify-content: flex-start;
     align-items: center;
+    gap: 1em;
 }
 /* .CONTAINER_TEST {
     display: flex;
@@ -39,10 +40,11 @@ img {
     overflow-y: scroll;
     overflow-x: hidden;
     /* border: 3px solid green; */
-    position: relative;
+    /* position: relative; */
 }
 .container:is(:nth-child(1)) {
     width: 60%;
+    flex-direction: column;
     /* border: 3px solid yellow; */
     box-sizing: border-box;
     background-color: black;
@@ -53,7 +55,7 @@ img {
     align-items: flex-start;
     box-sizing: border-box;
     padding: 1.5em;
-    gap: 2em;
+    /* gap: 1.3em; */
 }
 .text-box {
     display: flex;
@@ -67,19 +69,35 @@ img {
     font-size: 5em;
     /* border: 3px solid red; */
     color: #ff0073;
-    margin-bottom: .1em;
+    margin-bottom: .4em;
 }
 .text-box:is(:nth-child(2)) {
     font-size: 3em;
     /* border: 3px solid blue; */
+    margin-bottom: .5em;
+    line-height: 1em;
 }
 .text-box:is(:nth-child(3)) {
     font-size: 1.5em;
     /* border: 3px solid green; */
+    margin-bottom: .5em;
 }
 .text-box:is(:nth-child(4)) {
-    font-size: 1em;
+    /* font-size: 1em; */
+    font-size: 1.5em;
     /* border: 3px solid purple; */
+    margin-bottom: .5em;
+} .text-box:is(:nth-child(4))::before {
+    content: 'materials:\00a0';
+}
+.text-box:is(:nth-child(5)) {
+    /* font-size: 1em; */
+    font-size: 1.5em;
+    /* border: 3px solid purple; */
+    margin-bottom: 1em;
+    line-height: .75em;
+} .text-box:is(:nth-child(5))::before {
+    content: 'deliverables:\00a0';
 }
 .content {
     display: flex;
@@ -91,16 +109,40 @@ img {
 .text-content-box {
     display: flex;
     flex-direction: column;
-    /* border: 3px solid red; */
+    /* border: 3px solid yellow; */
     width: auto;
     height: auto;
-    line-height: 1em;
+    line-height: 1.05em;
     font-size: 2em;
+    display: inline-block;
+    margin-bottom: 1em;
 }
 a {
     color: #ff0073;
+}
+.logobox { /*I probably won't be using this, I'm testing a "back to top" link to send viewers to the hamburger menu for navigation to maintain a consistent site element*/
+    display: flex;
+    flex-direction: column;
+    border: 3px solid red;
+    /* width: 4em;
+    height: 5em; */
+    width: auto;
+    height: auto;
+    /* position: absolute;
+    bottom: 0em;
+    right: 0em; */
+    /* background-image: url(MEDIA/KF-logo-pink.png); background-repeat: no-repeat; background-position: center; background-size: cover; */
 }
 /* img {
     /* border: 3px solid red;
     background-color: green;
 } */
+.top-return {
+    display: flex;
+    flex-direction: column;
+    /* border: 3px solid green; */
+    height: auto;
+    width: auto;
+    font-size: 2em;
+    align-self: flex-end;
+}

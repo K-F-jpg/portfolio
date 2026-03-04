@@ -69,6 +69,7 @@
     /* border: 3px solid yellow; */
 } .content.four:hover {
     animation: content-change 1.5s infinite;
+    transition-timing-function: steps();
 }
 .content.five {
     height: 35em;
