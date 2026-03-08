@@ -1,0 +1,72 @@
+.modal {
+    background-color: rgb(255, 0, 115, 0.9);
+    width: 100vw;
+    height: 100vh;
+    /* border: 3px solid yellow; */
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    color: white;
+}
+.no-display {
+    display: none;
+}
+#modal-container {
+    display: flex;
+    flex-direction: column;
+    /* border: 3px solid yellow; */
+    width: 30%;
+    height: auto;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1em;
+    position: relative;
+    gap: .5em;
+}
+.close {
+    position: absolute;
+    top: 1em;
+    right: 2em;
+    font-size: 2em;
+    width: 1em;
+    height: 1em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+} .close:hover {
+    outline: 3px solid yellow;
+    color: yellow;
+    /* background-color: white; */
+}
+.arrow {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    border: 3px solid white;
+    justify-content: center;
+    align-items: center;
+    width: 1em;
+    height: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+} .arrow:hover {
+    color: yellow;
+    border: 3px solid yellow;
+}
+.arrow:is(:nth-child(1)) {
+    left: -3em;
+    top: calc(45%);
+    /* border: 3px solid orange; */
+}
+.arrow:is(:nth-child(2)) {
+    right: -3em;
+    top: calc(45%);
+    /* border: 3px solid red; */
+}

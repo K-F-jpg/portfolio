@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="../sub-style.css">
+        <link rel="stylesheet" href="../modal-style.css">
         <link rel="icon" type="icon/x-icon" href="../MEDIA/KF-logo-pink.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>1</title>
@@ -21,6 +22,17 @@
                     width: 100vw;
                     /* justify-content: center; */
                 }
+                #modal-container { /*paste code 2*/
+                    width: 75%;
+                }
+                .close {
+                    right: 0em;
+                    top: 0em;
+                    font-size: 10em;
+                }
+                .arrow {
+                    font-size: 10em;
+                }
             }
             a {
                 display: inline-block;
@@ -29,22 +41,30 @@
     </head>
 
     <body>
-        <div class="container">
-            <!-- <div class="content"><img src="../MEDIA/portfolio/ms-zine1.png"></div>
-            <div class=content><img src="../MEDIA/portfolio/ms-zine2.png"></div> -->
-            <div class=content><img src="../MEDIA/portfolio/ms-zine/open_spread-ms.png"></div>
-            <div class=content><img src="../MEDIA/portfolio/ms-zine/p1-ms.png"></div>
-            <div class=content><img src="../MEDIA/portfolio/ms-zine/p2-ms.png"></div>
-            <div class=content><img src="../MEDIA/portfolio/ms-zine/p3-ms.png"></div>
-            <div class=content><img src="../MEDIA/portfolio/ms-zine/back-ms.png"></div>
+        <div id="content-container" class="container">
+            <img src="../MEDIA/portfolio/ms-zine/open_spread-ms.png" description="front and back cover of zine">
+            <img src="../MEDIA/portfolio/ms-zine/p1-ms.png" description="zine 1st spread">
+            <img src="../MEDIA/portfolio/ms-zine/p2-ms.png" description="zine 2nd spread">
+            <img src="../MEDIA/portfolio/ms-zine/p3-ms.png" description="zine 3rd spread">
+            <img src="../MEDIA/portfolio/ms-zine/back-ms.png" description="zine foldout">
         </div>
+
+        <!-- <div id="modal" class="modal no-display">
+            <div id="modal-container">
+                <span class="close">&times;</span>
+                <img id="modal-image" src="../MEDIA/KF-logo-pink.png">
+                <div id="image-description"></div>
+            </div>
+        </div> -->
+
         <div class="container">
             <!-- <div class="hambungr"></div> -->
-            <div class="text-box">1)</div>
+            <div class="text-box"></div>
             <div class="text-box">Identity Zine</div>
             <div class="text-box">Multi Studio // Leave-Behind</div>
             <div class="text-box">printer paper (20lb)</div>
             <div class="text-box">10 zines</div>
+            <div class="number">1)</div>
             <div class="text-content-box">
                 We were required to create a zine, or some kind of publication, that talked about our identities in some way to act as a "leave-behind" for people who wanted to get to know us better; basically a business card with more artistic merit. I took a few weeks to make a zine that reflected my personality and identity, making it resemble a computer screen/ laptop to capture my digital identity. On the back, I added a magenta background and in front of that, collaged text to form the code to create the landing page to my website.<br>The "front" (or main contents) of the zine consists of me spelling out who I am as a designer. The back (viewed when unfolded) displays the code that creates the landing page to my (old) portfolio site. I repurposed the text from memes...
                 <br><br>
@@ -62,8 +82,20 @@
             <!-- <a href="../index.html" style="margin-left: auto;">
                 <div class="logobox"><img src="../MEDIA/KF-logo-pink.png" style="width: 9em;"></div>
             </a> -->
-            <div class="top-return"><a href="" style="text-decoration: none;">Back to top</a></div>
-            <div class="top-return"><a href="../index.html" style="text-decoration: none;">Back to index</a></div>
+            <div class="top-return"><a href="" style="text-decoration: none; color: rgb(255, 0, 115, 0.5)">Back to top</a></div>
+            <div class="top-return"><a href="../index.html" style="text-decoration: none; color: rgb(255, 0, 115, 0.5)">Back to index</a></div>
+        </div> <!--#ffbedb--> <!--#F976C6-->
+
+        <div id="modal" class="modal no-display"> <!--paste code 1-->
+            <span id="close" class="close">&times;</span>
+            <div id="modal-container">
+                <span id="left-arrow" class="arrow"><</span>
+                <span id="right-arrow" class="arrow">></span>
+                <img id="modal-image" src="../MEDIA/KF-logo-pink.png">
+                <div id="image-description"></div>
+            </div>
         </div>
+
+        <script src="../modal.js"></script>
     </body>
 </html>

@@ -43,8 +43,7 @@ img {
     /* position: relative; */
 }
 .container:is(:nth-child(1)) {
-    width: 30%;
-    flex-direction: column;
+    width: 25%;
     /* border: 3px solid yellow; */
     box-sizing: border-box;
     /* background-color: black; */
@@ -54,12 +53,13 @@ img {
     cursor: zoom-in;
 }
 .container:is(:nth-child(2)) {
-    width: 70%;
+    width: 75%;
     /* border: 3px solid green; */
     align-items: center;
     box-sizing: border-box;
     padding: 1.5em;
     /* gap: 1.3em; */
+    position: relative;
 }
 .text-box {
     display: flex;
@@ -67,7 +67,7 @@ img {
     width: auto;
     height: auto;
     line-height: .69em;
-    background-color: white;
+    /* background-color: white; */
 }
 .text-box:is(:nth-child(1)) {
     font-size: 5em;
@@ -103,13 +103,13 @@ img {
 } .text-box:is(:nth-child(5))::before {
     content: 'deliverables:\00a0';
 }
-.content {
+/* .content {
     display: flex;
     flex-direction: column;
-    /* border: 3px solid magenta; */
+    /* border: 3px solid magenta;
     width: 100%;
     height: auto;
-}
+} */
 .text-content-box {
     display: flex;
     flex-direction: column;
@@ -137,10 +137,10 @@ a {
     right: 0em; */
     /* background-image: url(MEDIA/KF-logo-pink.png); background-repeat: no-repeat; background-position: center; background-size: cover; */
 }
-/* img {
-    /* border: 3px solid red;
-    background-color: green;
-} */
+img {
+    width: 100%;
+    height: auto;
+}
 .top-return {
     display: flex;
     flex-direction: column;
@@ -149,4 +149,20 @@ a {
     width: auto;
     font-size: 1.5em;
     align-self: flex-end;
+}
+.number {
+    display: flex;
+    flex-direction: row;
+    /* border: 3px solid red; */
+    z-index: -2;
+    height: auto;
+    width: auto;
+    position: absolute;
+    left: 0em;
+    top: 0em;
+    font-size: 30em;
+    color: #ff0073;
+    line-height: .69em;
+    /* letter-spacing: -.1em; */
+    color: rgb(255, 0, 115, 0.2);
 }
