@@ -10,12 +10,41 @@
                 body {
                     flex-direction: column;
                     height: 100vh;
+                    width: 100vw;
+                    gap: 3em;
                 }
-                .container-left {
+                .container:is(:nth-child(1)) {
                     height: 100%;
+                    width: 100vw;
                 }
-                .container-right {
+                .container:is(:nth-child(2)) {
                     height: 100%;
+                    width: 100vw;
+                    /* justify-content: center; */
+                    padding-top: 20em;
+                }
+                #modal-container { /*paste code 2*/
+                    width: 75%;
+                    font-size: 3em;
+                }
+                .close {
+                    right: 0em;
+                    top: 0em;
+                    font-size: 10em;
+                    font-weight: normal;
+                }
+                .arrow {
+                    font-size: 1.5em;
+                } .arrow:hover {
+                    border: 5px solid white;
+                }
+                .arrow:is(:nth-child(1)) {
+                    left: -1.4em;
+                    border: 5px solid white;
+                }
+                .arrow:is(:nth-child(2)) {
+                    right: -1.4em;
+                    border: 5px solid white;
                 }
             }
             /* img {
@@ -39,8 +68,8 @@
             <div class="text-content-box">
                 These were also created during my May-June studies in Italy with the VCU Graphic Design program. I created two custom screenprints of a collection of historical wall-integrated vent systems I found throughout my travels that I outlined in Illustrator and assembled into a pattern. I printed these on textured paper to emulate the walls in the showcase room, printing one with a faulty screen I had created to emulate the ancient broken walls found across Italy to play into its historical background. The screenprint files are featured on the PDF to the left.
             </div>
-            <div class="top-return"><a href="" style="text-decoration: none;">Back to top</a></div>
-            <div class="top-return"><a href="../index.html" style="text-decoration: none;">Back to index</a></div>
+            <div class="top-return"><a href="" style="text-decoration: none; color: rgb(255, 0, 115, 0.5)">Back to top</a></div>
+            <div class="top-return"><a href="../index.html" style="text-decoration: none; color: rgb(255, 0, 115, 0.5)">Back to index</a></div>
         </div>
         <!-- <div class="CONTAINER_TEST">
             <div class="CONTENT_TEST"><img src="MEDIA/KF-logo-pink.png"></div>

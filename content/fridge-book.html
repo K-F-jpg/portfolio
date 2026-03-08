@@ -10,12 +10,41 @@
                 body {
                     flex-direction: column;
                     height: 100vh;
+                    width: 100vw;
+                    gap: 3em;
                 }
-                .container-left {
+                .container:is(:nth-child(1)) {
                     height: 100%;
+                    width: 100vw;
                 }
-                .container-right {
+                .container:is(:nth-child(2)) {
                     height: 100%;
+                    width: 100vw;
+                    /* justify-content: center; */
+                    padding-top: 24em;
+                }
+                #modal-container { /*paste code 2*/
+                    width: 75%;
+                    font-size: 3em;
+                }
+                .close {
+                    right: 0em;
+                    top: 0em;
+                    font-size: 10em;
+                    font-weight: normal;
+                }
+                .arrow {
+                    font-size: 1.5em;
+                } .arrow:hover {
+                    border: 5px solid white;
+                }
+                .arrow:is(:nth-child(1)) {
+                    left: -1.4em;
+                    border: 5px solid white;
+                }
+                .arrow:is(:nth-child(2)) {
+                    right: -1.4em;
+                    border: 5px solid white;
                 }
             }
         </style>
@@ -36,8 +65,8 @@
             <div class="text-content-box">
                 This project was created for my PHTO bookmaking class' stitch book assignment. The prompt for this book was "Portrait of One Person", which I interpreted as the saying "you are what you eat"- a visualization of myself as a college student on a meal plan who occasionally splurges for the good stuff. I convey the nuances of a healthy taste in food with the brands of products I use, featuring organic labels and quality ingredients. They are also featured in singles so as to drive home the notion that I am buying a limited amount of the products. The photographs featured in the book have been digitally altered using Photoshop to give them a brighter appearance and play into the notion that they're being lit with a fridge light. Click on <a href="https://drive.google.com/file/d/19BqVD20nMRg5FLE_acfgg62CLOp-ImD-/view">this link</a> to watch the flipthrough.
             </div>
-            <div class="top-return"><a href="" style="text-decoration: none;">Back to top</a></div>
-            <div class="top-return"><a href="../index.html" style="text-decoration: none;">Back to index</a></div>
+            <div class="top-return"><a href="" style="text-decoration: none; color: rgb(255, 0, 115, 0.5)">Back to top</a></div>
+            <div class="top-return"><a href="../index.html" style="text-decoration: none; color: rgb(255, 0, 115, 0.5)">Back to index</a></div>
         </div>
         <!-- <div class="CONTAINER_TEST">
             <div class="CONTENT_TEST"><img src="MEDIA/KF-logo-pink.png"></div>

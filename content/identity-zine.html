@@ -12,6 +12,7 @@
                     flex-direction: column;
                     height: 100vh;
                     width: 100vw;
+                    gap: 3em;
                 }
                 .container:is(:nth-child(1)) {
                     height: 100%;
@@ -21,17 +22,30 @@
                     height: 100%;
                     width: 100vw;
                     /* justify-content: center; */
+                    padding-top: 18em;
                 }
                 #modal-container { /*paste code 2*/
                     width: 75%;
+                    font-size: 3em;
                 }
                 .close {
                     right: 0em;
                     top: 0em;
                     font-size: 10em;
+                    font-weight: normal;
                 }
                 .arrow {
-                    font-size: 10em;
+                    font-size: 1.5em;
+                } .arrow:hover {
+                    border: 5px solid white;
+                }
+                .arrow:is(:nth-child(1)) {
+                    left: -1.4em;
+                    border: 5px solid white;
+                }
+                .arrow:is(:nth-child(2)) {
+                    right: -1.4em;
+                    border: 5px solid white;
                 }
             }
             a {
@@ -84,7 +98,7 @@
             </a> -->
             <div class="top-return"><a href="" style="text-decoration: none; color: rgb(255, 0, 115, 0.5)">Back to top</a></div>
             <div class="top-return"><a href="../index.html" style="text-decoration: none; color: rgb(255, 0, 115, 0.5)">Back to index</a></div>
-        </div> <!--#ffbedb--> <!--#F976C6-->
+        </div> <!--#ffbedb--> <!--#F976C6--> <!--paste code 3... because apparently this only works inline :/-->
 
         <div id="modal" class="modal no-display"> <!--paste code 1-->
             <span id="close" class="close">&times;</span>
