@@ -16,15 +16,15 @@ for (let i=0; i<imagery.length; i++) {
         modal.classList.remove('no-display');
     });
 
-    left.addEventListener('click', function() {
-        console.log('i have been clicked.');
-    })
+    // left.addEventListener('click', function() {
+    //     console.log('i have been clicked.');
+    // })
 
-    right.addEventListener('click', function() {
-        console.log('i have also been clicked.');
+    // right.addEventListener('click', function() {
+    //     console.log('i have also been clicked.');
+    // })
+
+    close.addEventListener('click', function() {
+        modal.classList.add('no-display');
     })
 }
-
-close.addEventListener('click', function() {
-    modal.classList.add('no-display');
-})

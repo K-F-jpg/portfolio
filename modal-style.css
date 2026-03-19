@@ -26,7 +26,10 @@
     align-items: center;
     font-size: 1em;
     position: relative;
-    gap: .5em;
+    gap: 1em;
+}
+#modal-image {
+    box-shadow: 0px 0px 2em black;
 }
 .close {
     position: absolute;
@@ -41,8 +44,8 @@
     align-items: center;
     border-radius: 1em;
 } .close:hover {
-    outline: 3px solid yellow;
-    color: yellow;
+    outline: 3px solid white;
+    /* color: yellow; */
     /* background-color: white; */
 }
 .arrow {
@@ -69,4 +72,11 @@
     right: -3em;
     top: calc(45%);
     /* border: 3px solid red; */
+}
+@font-face {
+    font-family: 'Creato';
+    src: url(MEDIA/CreatoDisplay-Regular.otf);
+}
+#image-description {
+    font-family: 'Creato';
 }

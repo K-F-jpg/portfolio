@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Creato';
+    src: url(MEDIA/CreatoDisplay-Regular.otf);
+}
+@font-face {
+    font-family: 'Creato-bold';
+    src: url(MEDIA/CreatoDisplay-Bold.otf);
+}
 body {
     display: flex;
     flex-direction: column;
@@ -8,6 +16,7 @@ body {
     width: 100%;
     height: auto;
     box-sizing: border-box;
+    font-family: 'Creato';
 }
 .first-container {
     display: flex;
@@ -79,6 +88,14 @@ body {
     /* height: auto;
     width: auto; */
 }
+@font-face {
+    font-family: 'Mistletoe';
+    src: url(MEDIA/MistletoeMagic.ttf);
+}
+@font-face {
+    font-family: 'Harrington';
+    src: url(MEDIA/HARNGTON.TTF);
+}
 .number {
     display: flex;
     flex-direction: row;
@@ -88,7 +105,10 @@ body {
     bottom: 0;
     left: 0;
     font-size: 7em;
+    font-size: 10em;
     color: #ff0073;
+    /* font-family: 'Mistletoe'; */
+    font-family: 'Times New Roman', Times, serif;
 }
 .contact-menu {
     display: flex;
