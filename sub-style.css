@@ -56,10 +56,12 @@ img {
     /* border: 3px solid yellow; */
     box-sizing: border-box;
     /* background-color: black; */
-    padding: 1.5em;
+    /* padding: 1.5em; */
+    padding: .5em;
     gap: 1em;
 } .container:is(:nth-child(1)):hover {
     cursor: zoom-in;
+    /* background-color: #FFCCE3; */ /*would also add a border around the image the viewer is hovering over; yeah.*/
 }
 .container:is(:nth-child(2)) {
     width: 75%;
@@ -133,10 +135,14 @@ img {
     line-height: 1.15em;
     font-size: 2em;
     display: inline-block;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
 }
 a {
-    color: #ff0073;
+    /* color: #ff0073; */
+    color: black;
+}
+.a-hover:hover {
+    background-color: rgb(255, 0, 115, .2);
 }
 .logobox { /*I probably won't be using this, I'm testing a "back to top" link to send viewers to the hamburger menu for navigation to maintain a consistent site element*/
     display: flex;
@@ -161,11 +167,12 @@ img {
     /* border: 3px solid green; */
     height: auto;
     width: auto;
-    font-size: 1.8em;
+    font-size: 1.6em;
+    /* font-size: 2em; */
     align-self: flex-end;
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 1em;
-    letter-spacing: -.02em;
+    /* font-family: 'Times New Roman', Times, serif; */
+    line-height: 1.15em;
+    /* letter-spacing: -.02em; */
 }
 /* .num-wrap {
     display: flex;
