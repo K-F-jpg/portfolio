@@ -142,7 +142,8 @@ a {
     color: black;
 }
 .a-hover:hover {
-    background-color: rgb(255, 0, 115, .2);
+    /* background-color: rgb(255, 0, 115, .2); */
+    color: #ff0073;
 }
 .logobox { /*I probably won't be using this, I'm testing a "back to top" link to send viewers to the hamburger menu for navigation to maintain a consistent site element*/
     display: flex;
@@ -167,7 +168,7 @@ img {
     /* border: 3px solid green; */
     height: auto;
     width: auto;
-    font-size: 1.6em;
+    font-size: 1.5em;
     /* font-size: 2em; */
     align-self: flex-end;
     /* font-family: 'Times New Roman', Times, serif; */
