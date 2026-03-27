@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="../sub-style.css">
+        <link rel="stylesheet" href="../modal-style.css">
         <link rel="icon" type="icon/x-icon" href="../MEDIA/KF-logo-pink.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>6</title>
@@ -60,7 +61,7 @@
     </head>
 
     <body>
-        <div class="container">
+        <div id="content-container" class="container">
             <div class="content"><img src="../MEDIA/portfolio/grate-2.png"></div>
             <div class=content><img src="../MEDIA/portfolio/grate-1.png"></div>
         </div>
@@ -86,5 +87,17 @@
         <img src="MEDIA/KF-logo-pink.png">
         <img src="MEDIA/KF-logo-pink.png">
         <img src="MEDIA/KF-logo-pink.png"> -->
+
+        <div id="modal" class="modal no-display"> <!--paste code 1-->
+            <span id="close" class="close">&times;</span>
+            <div id="modal-container">
+                <!-- <span id="left-arrow" class="arrow"><</span>
+                <span id="right-arrow" class="arrow">></span> -->
+                <img id="modal-image" src="../MEDIA/KF-logo-pink.png">
+            </div>
+            <div id="image-description"></div>
+        </div>
+
+        <script src="../modal.js"></script>
     </body>
 </html>

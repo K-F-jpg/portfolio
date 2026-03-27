@@ -12,6 +12,7 @@
     align-items: center;
     z-index: 10;
     color: white;
+    gap: 1em;
 }
 .no-display {
     display: none;
@@ -21,12 +22,14 @@
     flex-direction: column;
     /* border: 3px solid yellow; */
     width: 30%;
+    /* width: calc(100vh-50vw); */
     height: auto;
     justify-content: flex-start;
     align-items: center;
     font-size: 1em;
     position: relative;
     gap: 1em;
+    background-color: black;
 }
 #modal-image {
     box-shadow: 0px 0px 2em black;
