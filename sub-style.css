@@ -141,6 +141,7 @@ img {
 a {
     /* color: #ff0073; */
     color: black;
+    display: inline-block;
 }
 .a-hover:hover {
     /* background-color: rgb(255, 0, 115, .2); */
