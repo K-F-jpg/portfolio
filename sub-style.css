@@ -19,7 +19,7 @@ body {
     align-items: center;
     gap: 1em;
     /* color: #ff0073; */
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 /* .CONTAINER_TEST {
     display: flex;
