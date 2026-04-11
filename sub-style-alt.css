@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'Creato';
+    src: url(MEDIA/CreatoDisplay-Regular.otf);
+}
+@font-face {
+    font-family: 'Creato-bold';
+    src: url(MEDIA/CreatoDisplay-Bold.otf);
+}
+body {
+    display: flex;
+    flex-direction: row;
+    /* border: 3px solid red; */
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    /* justify-content: flex-start;
+    align-items: flex-start; */
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+    /* color: #ff0073; */
+    /* overflow: hidden; */
+}
+/* .CONTAINER_TEST {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid yellow;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.CONTENT_TEST {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid magenta;
+    width: 30em;
+    height: 30em;
+}
+img {
+    border: 3px solid red;
+} */
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* border: 3px solid green; */
+    /* position: relative; */
+}
+.container:is(:nth-child(1)) {
+    width: 35%;
+    /* border: 3px solid yellow; */
+    box-sizing: border-box;
+    /* background-color: black; */
+    /* padding: 1.5em; */
+    padding: 1.5em;
+    position: relative;
+    font-family: 'Creato';
+} .container:is(:nth-child(2)):hover {
+    cursor: zoom-in;
+    /* background-color: #FFCCE3; */ /*would also add a border around the image the viewer is hovering over; yeah.*/
+}
+.container:is(:nth-child(2)) {
+    width: 65%;
+    /* border: 3px solid green; */
+    align-items: center;
+    box-sizing: border-box;
+    padding: .5em;
+    gap: 2em;
+    
+}
+.text-box {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    line-height: .69em;
+    /* background-color: white; */
+}
+.text-box:is(:nth-child(1)) {
+    font-size: 5em;
+    /* border: 3px solid red; */
+    color: #ff0073;
+    /* margin-bottom: .4em; */
+    margin-bottom: 1em;
+}
+.text-box:is(:nth-child(2)) {
+    font-size: 3em;
+    /* border: 3px solid blue; */
+    margin-bottom: .5em;
+    line-height: 1em;
+    /* font-family: 'Creato-bold'; */
+}
+.text-box:is(:nth-child(3)) {
+    font-size: 1.5em;
+    /* border: 3px solid green; */
+    margin-bottom: .5em;
+}
+.text-box:is(:nth-child(4)) {
+    /* font-size: 1em; */
+    font-size: 1.5em;
+    /* border: 3px solid purple; */
+    margin-bottom: .5em;
+} .text-box:is(:nth-child(4))::before {
+    content: 'materials:\00a0';
+}
+.text-box:is(:nth-child(5)) {
+    /* font-size: 1em; */
+    font-size: 1.5em;
+    /* border: 3px solid purple; */
+    margin-bottom: 4em;
+    line-height: .75em;
+} .text-box:is(:nth-child(5))::before {
+    content: 'deliverables:\00a0';
+}
+/* .content {
+    display: flex;
+    flex-direction: column;
+    /* border: 3px solid magenta;
+    width: 100%;
+    height: auto;
+} */
+.text-content-box {
+    display: flex;
+    flex-direction: column;
+    /* border: 3px solid yellow; */
+    width: auto;
+    height: auto;
+    /* line-height: 1.05em; */
+    line-height: 1.15em;
+    font-size: 2em;
+    display: inline-block;
+    margin-bottom: .5em;
+}
+a {
+    /* color: #ff0073; */
+    color: black;
+    display: inline-block;
+}
+.a-hover:hover {
+    /* background-color: rgb(255, 0, 115, .2); */
+    color: #ff0073;
+}
+.logobox { /*I probably won't be using this, I'm testing a "back to top" link to send viewers to the hamburger menu for navigation to maintain a consistent site element*/
+    display: flex;
+    flex-direction: column;
+    border: 3px solid red;
+    /* width: 4em;
+    height: 5em; */
+    width: auto;
+    height: auto;
+    /* position: absolute;
+    bottom: 0em;
+    right: 0em; */
+    /* background-image: url(MEDIA/KF-logo-pink.png); background-repeat: no-repeat; background-position: center; background-size: cover; */
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.top-return {
+    display: flex;
+    flex-direction: column;
+    /* border: 3px solid green; */
+    height: auto;
+    width: auto;
+    /* font-size: 1.5em; */
+    text-align: right;
+    font-size: .75em;
+    /* font-size: 2em; */
+    align-self: right;
+    /* font-family: 'Times New Roman', Times, serif; */
+    line-height: 1.15em;
+    /* letter-spacing: -.02em; */
+}
+/* .num-wrap {
+    display: flex;
+    width: auto;
+    height: auto;
+    /* border: 3px solid red;
+    position: fixed;
+    top: 0em;
+    left: 20em;
+} */
+@font-face {
+    font-family: 'Mistletoe';
+    src: url(MEDIA/MistletoeMagic.ttf);
+}
+.number {
+    display: flex;
+    flex-direction: row;
+    /* border: 3px solid red; */
+    z-index: -2;
+    height: auto;
+    width: auto;
+    position: absolute;
+    left: 0em;
+    top: 0em;
+    font-size: 30em;
+    line-height: .69em;
+    /* letter-spacing: -.1em; */
+    color: rgb(255, 0, 115, 0.2);
+    /* color: #acacac; */
+    /* font-family: 'Mistletoe'; */
+    font-family: 'Times New Roman', Times, serif;
+}
